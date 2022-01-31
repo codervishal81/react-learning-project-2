@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../ui/Card";
 import classes from "./AddUser.module.css"
 import Button from "../ui/Button";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 import ErrorModal from "../ui/ErrorModal";
 
 const AddUser = (props) => {
@@ -40,7 +40,7 @@ const AddUser = (props) => {
     };
     
     return (
-        <div>
+        <Fragment>
             {error && <ErrorModal title={error.title} message={error.message} onConfirm={errorHandler}/>}
             <Card className={classes.input}>
                 <form onSubmit={addUserHandler}>
@@ -53,7 +53,7 @@ const AddUser = (props) => {
                     <Button type="submit">Add User</Button>
                 </form>
             </Card>
-        </div>
+        </Fragment>
     );
 };
 
