@@ -1,5 +1,5 @@
 # react-learning-project-2
- React learning project 2
+ React learning project 2, for concepts like Fragment, Portal and Ref.
  
   How to Run?
  -------------
